@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(15, 15, 57);
+}
+.card{
+    background-color:#aac4e2; 
+    padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.card-title{
+    color:#E0115F;
+    margin: 0 auto;
+   
+}
+.card-text{
+    color:rgb(15, 15, 57);
+}
+.img-center{
+    margin:0 auto;
+}
+#blood{
+    width: 200px;
+    height: 200px;
+}
+#spit{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+#hugs{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+#Touching{
+    width: 200px;
+    height: 200px;
+}
+#bedding{
+    width:200px;
+    height:200px;
+}
+#faces{
+    width: 200px;
+    height: 200px;
+}
+#infected{
+    width: 200px;
+    height: 200px;
+}
+#wastes{
+    width:200px ;
+    height: 2000;
+}
+#kissing{
+    width: 200px;
+    height: 200px;
+}
