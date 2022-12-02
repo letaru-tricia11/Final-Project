@@ -4,11 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard.</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
- <link rel="stylesheet" href="hac.css">
+    <link rel="stylesheet" href="hac.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+        <h3 class="Ebola Monitoring System"><span class="ti-unlink"></span>ADMIN<span</h3>
+   <span class="ti-menu-alt"></span>
+    </div> 
+    <div class="sidebar-menu">
+    <ul>
+        <li><a href="">
+            <span class="ti-home"></span>
+            <span>Home</span>
+        </a>
+    </li>
+    <li><a href="">
+        <span class="ti-face-smile"></span>
+        <span>Patients</span>
+    </a>
+</li>
+<li><a href="">
+    <span class="ti-book"></span>
+    <span>Contacts</span>
+</a>
+</li>
+<li><a href="">
+    <span class="ti-agenda"></span>
+    <span>Projects</span>
+</a>
+</li>
+<li><a href="">
+    <span class="ti-pie-chart"></span>
+    <span>Statistics</span>
+</a>
+</li>
+    </ul>
+    <div class="main-content">
+        <header>
+            <div>
+                <span class="ti-search"></span>
+                <input type="Search" placeholder="Search">
+            </div>
+            <div class="social-icons">
+                <i class="fas fa-band-aid"></i>
+
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+        <main>
+            <h2>Overview</h2>
+            <div class="dashboard-cards">
+                <div class="card-single">
+                    <div class="card-body"></div>
+                    <span class="ti-briefcase"></span>
+                    <div>
+                        <h5>No.of cases</h5>
+                        <h4>75%</h4>
+                    </div>
+                </div>
+                <div class="card-footer">
+                <a href="">View all</a>
+                </div>
+            </div>
+            <div class="card-single">
+                <div class="card-body"></div>
+                <span class="ti-briefcase"></span>
+                <div>
+                    <h5>Recoveries</h5>
+                    <h4>45%</h4>
+                </div>
+            </div>
+            <div class="card-footer">
+            <a href="">View all</a>
+            </div>
+        </div>
+        </div>
+        </main>
+    </div>
+    </div>
+  </div> 
+<!-- nav starts here -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="/IMAGES/moh.png" style="width:50px  ; height:50px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Report a case</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contanct us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">How EVD tramsmits</a></li>
+              <li><a class="dropdown-item" href="#">Signs and symptoms</a></li>
+              <li><a class="dropdown-item" href="#">Prevention of EVD</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Statistics</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <div style="padding-left: 100px;"><h3 class="text-center">EBOLA MONITARING SYSTEM</h3></div>
+          </li>
+         </ul>
+         <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+<!-- carousel starts here -->
     <div class="container" id="">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -120,10 +242,221 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        
+       </div>
+<!-- public form -->
+       <div class="container mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-1 py-4">
+            <div class="card-body">
+                <h2 class="card-title mb-3">Report a case</h2>
+                <h6 class="information mt-4">Please provide following information about person</h6>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <!-- <label for="name">Name</label> --> <input class="form-control" type="text" placeholder="Name"> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group"> <input class="form-control" type="text" placeholder="Mobile"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group"> <input class="form-control" type="text" placeholder="Describe the signs "> </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            
+                                <div class="dropdown">
+                                    <select name="districts" id="districts">
+                                        <option value="Select location">Select location</option>
+                                        <option value="Kampala">Kampala</option>
+                                        <option value="Mubende">Mubende</option>
+                                        <option value="Kassanda">Kassanda</option>
+                                        <option value="Mbarara">Mbarara</option>
+                                        <option value="Jinja">Jinja</option>
+                                        <option value="Masaka">Masaka</option>
+                                        <option value="Kagadi">Kagadi</option>
+                                        <option value="Wakiso">Wakiso</option>
+                                        <option value="Kyegegwa">Kyegegwa</option>
+                                        <option value="Bunyangabu">Bunyangabu</option>
+                                        <option value="Kiruhura">Kiruhura</option>
+                                        <option value="Isingiro">Isingiro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small class="agree-text">For more information contact 020441000</small></div> <button class="btn btn-primary btn-block confirm-button">Confirm</button>
+            </div>
+        </div>
     </div>
+<!-- doctor's form -->
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+  <div class="card px-1 py-4">
+      <div class="card-body">
+          <h2 class="card-title mb-3">Doctor's Form</h2>
+          <h6 class="information mt-4">Please provide following information about person</h6>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <!-- <label for="name">Name</label> --> <input class="form-control" type="text" placeholder="Name"> </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <div class="input-group"> <input class="form-control" type="text" placeholder="Mobile"> </div><br>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <select name="gender" id="gender">
+                  <option value="gender">gender</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  </select>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <div class="input-group"> <input class="form-control" type="text" placeholder="Describe the signs " required="required"> </div><br>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      
+                          <div class="dropdown">
+                              <select name="districts" id="districts">
+                                  <option value="Select location">Select location</option>
+                                  <option value="Kampala">Kampala</option>
+                                  <option value="Mubende">Mubende</option>
+                                  <option value="Kassanda">Kassanda</option>
+                                  <option value="Mbarara">Mbarara</option>
+                                  <option value="Jinja">Jinja</option>
+                                  <option value="Masaka">Masaka</option>
+                                  <option value="Kagadi">Kagadi</option>
+                                  <option value="Wakiso">Wakiso</option>
+                                  <option value="Kyegegwa">Kyegegwa</option>
+                                  <option value="Bunyangabu">Bunyangabu</option>
+                                  <option value="Kiruhura">Kiruhura</option>
+                                  <option value="Isingiro">Isingiro</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small class="agree-text">For more information contact 020441000</small></div>
+           <button class="btn btn-primary btn-block confirm-button">Submit</button>
+      </div>
+  </div>
+</div>
+<!-- login begins from here -->
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+  <div class="card px-1 py-4">
+      <div class="card-body">
+          <h2 class="card-title mb-3">Login Form</h2>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <!-- <label for="name">Name</label> --> <input class="form-control" type="text" placeholder="Userame"> </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <div class="input-group"> <input class="form-control" type="text" placeholder="Password"> </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"></div> <button class="btn btn-primary btn-block confirm-button">Submit</button>
+      </div>
+  </div>
+</div>
+<!-- piechart starts here -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Patients', 'Total numbers'],
+          ['In Patients',     50],
+          ['Out Patients',      20],
+          ['Recoveries',  20],
+          ['Deaths', 10],
+        ]);
+
+        var options = {
+          title: 'PATIENTS STATISTICS'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
-</body>
+<!-- footer starts her -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Report form</a></li>
+            <li><a href="#">Statistics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="https://www.Google.com/"><img src="https://www.tutorialspoint.com/javafx/images/javafx-mini-logo.jpg" style="width:50px;height:50px;"></a></p>
+
+          <ul>
+            <li><a href="#">Toll free Number</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Watsapp</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>News</h4>
+          <ul>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+     
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i>
+    </div>
+  </div>
+</div>
+</div>
+</footer> -->
+    </body>
+
 </html>
 
 
