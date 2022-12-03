@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="hac.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+</head>
+<body>
+   
+    <div id="wrapper">
+    
+    <!-- This div contains the number of reports and confirmed cases -->
+    <div class="box">
+     <div class="cont">
+        <h3>Total no. of reports</h3>
+        <div id="number">12</div>
+     </div>
+     <div class="cont-1">
+        <h3>Total no. confirmed</h3>
+        <div id="number">12</div>
+     </div>
+    </div>
+    <script>
+     document.getElementById("number").style.backgroundcolor ="pink";
+    </script>
+
+    <!-- The pie chart starts here -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Patients', 'Total numbers'],
+          ['In Patients',     50],
+          ['Out Patients',      20],
+          ['Recoveries',  20],
+          ['Deaths', 10],
+        ]);
+
+        var options = {
+          title: 'PATIENTS STATISTICS'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  
+    <div id="piechart" style="width:600px; height: 400px; " ></div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+
+<!-- The pie chart ends here -->
+
+<!-- The bar  graph starts here -->
+ <div id = "container" style = "width: 600px; height: 405px;"> 
+</div>
+<script language = "JavaScript">
+   function drawChart() {
+      // Define the chart to be drawn.
+      var data = google.visualization.arrayToDataTable([
+         ['Year', 'patients'],
+         ['In patient',  900],
+         ['Out patient',  1000],
+         ['Recoveries',  1170],
+         ['Deaths',  1170]
+      ]);
+
+      var options = {title: 'Population (in hundreds)'}; 
+
+      // Instantiate and draw the chart.
+      var chart = new google.visualization.ColumnChart(document.getElementById('container'));
+      chart.draw(data, options);
+
+   }
+   google.charts.setOnLoadCallback(drawChart);
+</script>
+<!-- </div> -->
+</div>
+</body>
+</html>

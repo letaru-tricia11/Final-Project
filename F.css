@@ -32,8 +32,11 @@ html{
 .header #logo{
     width: 50px;
 }
+.lg{
+ color: #23c3a0;
+}
 .navbar a{
-  color: white;
+  color:#ff5d22;
   font-size: 1rem;
   margin-left: 2rem;
 }
@@ -94,7 +97,7 @@ img{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 20%;
 }
       
 
@@ -106,7 +109,7 @@ img{
 
 
 .footer{
-    background-color: #aac4e2;
+    background-color: #239f85;
     padding:70px 0;
 }
 .footer-col{
