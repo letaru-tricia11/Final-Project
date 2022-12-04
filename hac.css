@@ -93,6 +93,11 @@ nav{
     top: 0;
     z-index: 11;
 }
+/*change nvav bar styling on click using .windeom-scroll*/
+  .window-scroll{
+    background: #6c63ff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+  }
 .nav_container{
     height: 100%;
     display: flex;
@@ -145,7 +150,7 @@ header{
     gap: 4rem;
 }
 .categories_left p{
-    margin: 1rem 0 3rem;
+    margin:4rem;
 }
 .categories_right{
     display: grid;
@@ -160,4 +165,33 @@ header{
 }
 .category:hover{
     box-shadow:0 3rem 3rem rgba(0,0,0,0.3) ;
+}
+.category:nth-child(2) .category_icon{
+    background: red;
+}
+.category:nth-child(3) .category_icon{
+    background:#00bf8e;
+}
+.category:nth-child(4) .category_icon{
+    background:#f7c94b;
+}
+.category:nth-child(5) .category_icon{
+    background:aliceblue;
+}
+.category:nth-child(6) .category_icon{
+    background:#424890;
+}
+.category_icon{
+    background: #424890;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+.category h5{
+    margin: 2rem 0 1rem;
+}
+.category p{
+    font-size: 0.85rem;
+}
+img{
+
 }
