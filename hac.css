@@ -192,6 +192,81 @@ header{
 .category p{
     font-size: 0.85rem;
 }
+/*q&a*/
+.reports{
+    background: #2e3267;
+    text-align: center;
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns:repeat(3 1fr) ;
+}
+.reports_container{
+    display: grid;
+    grid-template-columns:repeat(3 1fr) ;
+    gap: 2rem;
+}
 img{
-
+    width:100%;
+    height:100%;
+    display: grid;
+}
+.reports_info{
+    padding: 2rem;
+}
+.reports_info p{
+    padding: 1.2rem 0 2rem;
+}
+/*fas*/
+.faqs{
+    background: #2e3267;
+    border: insert 0 0 3rem rgba(0,0,0,0.5);
+}
+.faqs_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.faqs{
+    padding: 2rem;
+    display: grid;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: #6c63ff;
+    cursor: pointer;
+}
+/*footer*/
+footer{
+ background: #424890;
+ padding-top: 5rem;
+ font-size: 0.9rem;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 5rem;
+}
+.footer_container > d h4{
+ margin-bottom: 1.2rem;
+}
+.footer_1 p{
+  margin:0 0 2rem;
+}
+footer ul li{
+ margin-bottom: 0.7rem;
+}
+footer ul li a:hover{
+ text-decoration: underline;
+}
+.footer_socials{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.footer_copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 5px solid #fff;
 }
