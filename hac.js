@@ -10,6 +10,13 @@ faqs.forEach(faq =>{
 })
 menuBtn.addEventListener('click',()=>{
     menu.style.display="flex";
-    
-    closeBtn
+    closeBtn.style.display="none"
+    menuBtn.style.display="inline-block";
 })
+//close nav bar
+ const closeNav = () =>{
+    closeBtn.style.display="none";
+    closeBtn.style.display="none";
+    menuBtn.style.display="inline-block";
+ }
+ closeBtn.addEventListener('click',closeNav)
