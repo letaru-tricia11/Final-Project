@@ -299,7 +299,7 @@ footer ul li a:hover{
 }
 
 /*navbar*/
-nav button{
+/*nav button{
     display: inline-block;
     background: transparent;
     font-size: 1.8rem;
@@ -307,7 +307,7 @@ nav button{
     cursor: pointer;
 }
 nav button#close-menu-btn{
-    display: none;
+    display:none;
 }
 .nav_menu{
     position: fixed;
@@ -317,9 +317,9 @@ nav button#close-menu-btn{
     width: 18rem;
     flex-direction: column;
     gap: 0;
-    display: none;/*navbar is hidden js needed for it to open and close*/
+    /* display: none;navbar is hidden js needed for it to open and close*/
 }
-.nav_menu li{
+/*.nav_menu li{
     width: 100%;
     height: 5.8rem;
     transform-origin:top right
